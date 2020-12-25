@@ -1,8 +1,20 @@
-# muscle_lncRNA
-This is a temporary storage for list of Age-lncRNAs found in muscle.
+# What is the code for?
+The script allows a user to retrieve sequence in fasta format from ensenbl databse using API.
 
-There are 62 lncRNA sequences in the zip folder named "bkp_raw_sequence_json.zip". 
-However a few lncRNA sequence information was not available in the databse. They still exist as dependent files, but until information is collected they are not suitable for further analysis. I will try to fill the gap as soon as possible.
+# I needed to write this code in order to...
+I wanted to collect some raw lncRNA sequence data for secondary structure analysis.
+Thankfully, Ensembl provides a neat API for users to download the data easily.
+I only needed 62 sequences but it would be daunting if it were hunderds of them! 
 
-RNA-sequence was retrieved from the ENSEMBLE website using API.
+# What to prepare:
+1. List of accession numbers of the sequences you wish to retrieve from Ensembl. You can find an example in "example.txt" file.
+
+# How to use:
+1. Prepare the list of sequence.
+2. Open "example_retrieve-seq.sh" in a text editor.
+3. Change example.txt in line 8 to your file name.
+4. Open terminal and excute sh file.
+5. Each line is read and curl request will be made. The result comes back as fasta file named with each accession number. 
+
+RNA-sequences was retrieved from the ENSEMBLE website using API.
 https://rest.ensembl.org/documentation/info/sequence_id
