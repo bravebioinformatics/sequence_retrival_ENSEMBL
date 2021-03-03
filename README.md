@@ -1,7 +1,7 @@
 # What is the code for?
 The script allows a user to retrieve sequence in fasta format from ensenbl databse using API.
 
-# I wrote the code for...
+# I wrote this code for...
 collecting lncRNA sequence data for secondary structure analysis. Thankfully, Ensembl provides a neat API for users to download the data easily.
 I only needed 62 sequences but it would be daunting if it were hunderds of them. So it's nice to have the process automated. 
 
